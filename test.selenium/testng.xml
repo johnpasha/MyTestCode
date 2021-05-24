@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="com.test.selenium.InhericListner"></listener>
+	</listeners>
+	<test name="Test">
+		<parameter name="browser" value="Firefox" />
+		<classes>
+
+			<class name="com.test.selenium.ReverseString">
+				<parameter name="browser" value="Firefox" />
+				<methods>
+					<exclude name="test"></exclude>
+					<include name="test1"></include>
+					<!-- <include name="secondTestCase"></include> <exclude name="thirdTestCase"></exclude> -->
+
+
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

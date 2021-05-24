@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="lName" value="lName"/>
+  <parameter name="fName" value="fName"/>
+  <parameter name="pCode" value="pCode"/>
+  <test thread-count="5" name="Initial Test(failed)">
+    <classes>
+      <class name="com.Automate.tests.Te1sts">
+        <methods>
+          <include name="setUp"/>
+          <include name="addCustomerTest"/>
+          <include name="tearDown"/>
+          <include name="Nav"/>
+          <include name="BankManagerLogin"/>
+        </methods>
+      </class> <!-- com.Automate.tests.Te1sts -->
+    </classes>
+  </test> <!-- Initial Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
